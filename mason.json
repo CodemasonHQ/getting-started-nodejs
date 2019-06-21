@@ -1,0 +1,14 @@
+{
+  "name": "getting-started-nodejs",
+  "description": "Simple Node.js app that rotates a series of quotes.",
+  "repository": "https://github.com/codemasonhq/getting-started-nodejs",
+  "masonVersion": "v1",
+  "type": "application",
+  "services": [
+    {
+      "name": "web",
+      "image": "${app}",
+      "ports": ["3000"]
+    }
+  ]
+}
