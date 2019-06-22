@@ -1,8 +1,26 @@
 # Getting Started with Node.js on Codemason
 
-This is a simple application that rotates a series of quotes. It accompanies the [Getting Started with Node.js on Codemason](http://mason.ci/docs/getting-started-with-nodejs) guide.
+This is a simple application that rotates a series of quotes. It accompanies the [Getting Started with Node.js on Codemason](https:/codemason.io/docs/getting-started-with-nodejs) guide.
 
 You can use this to quickly experiment with deploying an application to Codemason.
 
 ![preview](public/preview.png)
 
+
+### Local Development
+Run the app locally with docker-compose 
+```
+docker-compose up -d
+```
+Your app should now be running on [localhost:3000](http://localhost:3000).
+
+### Deploying to Codemason
+```
+$ mason create getting-started-nodejs
+$ git push codemason master
+$ mason services:create getting-started-nodejs/web -p 3000
+```
+
+or 
+
+[![Deploy](https://codemason.io/img/deploy.svg)](https://codemason.io/apps/create?template=https://github.com/codemasonhq/getting-started-nodejs)
