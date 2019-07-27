@@ -12,13 +12,13 @@ Run the app locally with docker-compose
 ```
 docker-compose up -d
 ```
-Your app should now be running on [localhost:3000](http://localhost:3000).
+Your app should now be running on [localhost](http://localhost).
 
 ### Deploying to Codemason
 ```
 $ mason create getting-started-nodejs
 $ git push codemason master
-$ mason services:create getting-started-nodejs/web -p 3000
+$ mason services:create getting-started-nodejs/web
 ```
 
 or 

@@ -8,7 +8,7 @@
     {
       "name": "web",
       "image": "${app}",
-      "ports": ["3000"]
+      "ports": ["80"]
     }
   ]
 }
